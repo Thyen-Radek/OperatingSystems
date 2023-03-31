@@ -1,0 +1,8 @@
+PID of main program: 19074
+Parent process PID: 19074
+Child process PID: 19075
+Parent process PID: 19074
+Child process PID: 19076
+Parent process PID: 19074
+Child process PID: 19077
+Number of arguments: 3 

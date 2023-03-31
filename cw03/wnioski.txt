@@ -1,0 +1,23 @@
+zad1
+
+Program działa poprawnie 
+Jeśli chcemy zeby wypisywało w odpowiedniej kolejności nalezy po kazdym
+procesie podawać wait(NULL), aby parent czekał na zakończenie potomnego procesu.
+
+zad2
+
+Program działa poprawnie
+Gdy podam katalog z wieloma plikami lub kilkoma wypisze wszystko bez problemu.
+Natomiast gdy podam pusty katalog to nic nie wypisze poza nazwą programu.
+
+zad3 
+
+Program wypisuje wszystkie pliki w podkatalogach i katalogach prawidłowo,
+momentami zdarza się ze wystepuje błąd, aczkolwiek jest to zalezne od tego
+czy mamy dostęp do danego katalogu/pliku czy tez sciezka do tego katalogu nie 
+jest za długa
+
+ogólne:
+warto tez jeśli chcemy zapisywać do pliku, uzyc funkcji fflush(stdout),
+aby nie wypisywało nam kilkukrotnie danych dla procesu programu.
+warto rowniez wyczyscic sobie bufor funkcja setbuf(stdout, NULL)

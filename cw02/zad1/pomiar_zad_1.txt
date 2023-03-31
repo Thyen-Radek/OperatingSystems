@@ -1,0 +1,6 @@
+Real time of function lib : 0.000000s
+User time of function lib : 0.000000s
+System time of function lib : 0.000000s
+Real time of function sys : 0.000000s
+User time of function sys : 0.000000s
+System time of function sys : 0.000000s

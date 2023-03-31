@@ -1,0 +1,9 @@
+Wnioski:
+
+Przy uzyciu funkcji fork, w opcji mask, sygnał oczekuje zarówno
+w rodzicu jak i dziecku, natomiast w pending czeka w rodzicu
+ale juz w dziecku nie, prawdopodobnie dlatego, bo jest to inny proces
+
+Natomiast dla opcji exec, w opcji mask dziala tak samo jak w fork
+ale w opcji pending w dziecku oczekuje sygnał tak jak w rodzicu, co jest związane z 
+tym ,ze jest to ten sam proces (ten sam proces to wykonuje)

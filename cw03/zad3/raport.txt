@@ -1,0 +1,21 @@
+Proces programu: 19451 
+/Users/radek.kawa/CLionProjects/Systemy/cw01/zad2/main.c 19455 
+/Users/radek.kawa/CLionProjects/Systemy/cw01/zad2/main.c 19455 
+/Users/radek.kawa/CLionProjects/Systemy/cw01/zad1/library.c 19458 
+/Users/radek.kawa/CLionProjects/Systemy/KawaRadoslaw/cw02/zad2/main.c 19461 
+/Users/radek.kawa/CLionProjects/Systemy/KawaRadoslaw/cw02/zad2/main.c 19461 
+/Users/radek.kawa/CLionProjects/Systemy/KawaRadoslaw/cw02/zad4/main.c 19463 
+/Users/radek.kawa/CLionProjects/Systemy/KawaRadoslaw/cw02/zad4/main.c 19463 
+/Users/radek.kawa/CLionProjects/Systemy/KawaRadoslaw/cw02/zad3/main.c 19465 
+/Users/radek.kawa/CLionProjects/Systemy/KawaRadoslaw/cw02/zad1/main.c 19466 
+/Users/radek.kawa/CLionProjects/Systemy/KawaRadoslaw/cw02/zad1/main.c 19466 
+/Users/radek.kawa/CLionProjects/Systemy/cw02/zad2/main.c 19470 
+/Users/radek.kawa/CLionProjects/Systemy/cw02/zad2/main.c 19470 
+/Users/radek.kawa/CLionProjects/Systemy/cw02/zad4/main.c 19472 
+/Users/radek.kawa/CLionProjects/Systemy/cw02/zad4/main.c 19472 
+/Users/radek.kawa/CLionProjects/Systemy/cw02/zad3/main.c 19474 
+/Users/radek.kawa/CLionProjects/Systemy/cw02/zad1/main.c 19475 
+/Users/radek.kawa/CLionProjects/Systemy/cw02/zad1/main.c 19475 
+/Users/radek.kawa/CLionProjects/Systemy/cw03/zad2/main.c 19478 
+/Users/radek.kawa/CLionProjects/Systemy/cw03/zad3/main.c 19479 
+/Users/radek.kawa/CLionProjects/Systemy/cw03/zad1/main.c 19480 

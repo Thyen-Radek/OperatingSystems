@@ -1,0 +1,6 @@
+Real time of function 1_char : 0.000000s
+User time of function 1_char : 0.000000s
+System time of function 1_char : 0.000000s
+Real time of function 1024_chars : 0.000000s
+User time of function 1024_chars : 0.000000s
+System time of function 1024_chars : 0.000000s

@@ -1,0 +1,24 @@
+**** Method Fork ****
+Ignore testing... 
+Raising signal in child process 
+Handler testing... 
+Handler, pid: 17466, parent pid: 17465, signal: 30 
+Raising signal in child process 
+Handler, pid: 17467, parent pid: 17466, signal: 30 
+Mask testing... 
+Signal is waiting, ppid: 17468, pid: 17469 
+Raising signal in child process 
+Signal is waiting, ppid: 17469, pid: 17470 
+Pending testing... 
+Signal is waiting, ppid: 17471, pid: 17472 
+Signal is not waiting, ppid: 17472, pid: 17473 
+**** Method Exec ****
+Ignore testing... 
+Raising signal in child process 
+Mask testing... 
+Signal is waiting, ppid: 17478, pid: 17480 
+Raising signal in child process 
+Signal is waiting, ppid: 17478, pid: 17480 
+Pending testing... 
+Signal is waiting, ppid: 17481, pid: 17482 
+Signal is waiting, ppid: 17481, pid: 17482 

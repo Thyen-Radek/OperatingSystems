@@ -1,0 +1,4 @@
+./main Makefile
+main
+main.c
+raport.txt

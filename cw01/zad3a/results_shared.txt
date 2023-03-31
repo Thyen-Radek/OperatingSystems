@@ -1,0 +1,49 @@
+shared test:
+Array initialization...
+Real time of function init : 0.000000s
+User time of function init : 0.000000s
+System time of function init : 0.000000s
+Saving file...
+Real time of function count : 0.010000s
+User time of function count : 0.000000s
+System time of function count : 0.000000s
+Saving file...
+Real time of function count : 0.000000s
+User time of function count : 0.000000s
+System time of function count : 0.000000s
+Saving file...
+Real time of function count : 0.010000s
+User time of function count : 0.000000s
+System time of function count : 0.000000s
+Getting from block...
+Index: 0, Having:      117     274    3039 ../zad1/library.c
+Real time of function show : 0.000000s
+User time of function show : 0.000000s
+System time of function show : 0.000000s
+Getting from block...
+Index: 1, Having:       24      43     356 ../zad1/library.h
+Real time of function show : 0.000000s
+User time of function show : 0.000000s
+System time of function show : 0.000000s
+Getting from block...
+Index: 2, Having:      127     347    5456 ../zad2/main.c
+Real time of function show : 0.000000s
+User time of function show : 0.000000s
+System time of function show : 0.000000s
+Removing from block...
+Real time of function delete : 0.000000s
+User time of function delete : 0.000000s
+System time of function delete : 0.000000s
+Removing from block...
+Real time of function delete : 0.000000s
+User time of function delete : 0.000000s
+System time of function delete : 0.000000s
+Removing from block...
+Real time of function delete : 0.000000s
+User time of function delete : 0.000000s
+System time of function delete : 0.000000s
+Freeding table...
+Real time of function destroy : 0.000000s
+User time of function destroy : 0.000000s
+System time of function destroy : 0.000000s
+Exiting...
