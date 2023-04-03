@@ -45,6 +45,7 @@ void siginfo_test(){
     if(sigaction(SIGINT, &act, NULL) == -1){
         perror("Sigaction error \n");
     }
+    
     raise(SIGINT);
     printf("Setting flag sa_siginfo!\n");
     act.sa_flags = SA_SIGINFO;
@@ -60,11 +61,9 @@ void nocldstop_test(){
     struct sigaction act;
     act.sa_sigaction = nocldstop_handler;
     sigemptyset(&act.sa_mask); 
-    act.sa_flags = 0;
     if(sigaction(SIGCHLD, &act, NULL) == -1){
         perror("Sigaction error \n");
     }
-
     child_test(SIGSTOP);
     printf("Setting flag sa_nocldstop!\n");
     act.sa_flags = SA_NOCLDSTOP;
