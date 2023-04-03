@@ -1,0 +1,9 @@
+Wnioski:
+
+SIGINFO jest flaga przydatna gdy chcemy uzyc handlera (sigaction) wyswietlajacego dodatkowe informacje związane z procesem
+skąd został wysłany, do kąd itd. 
+
+Nocldstop przydatna flaga gdy nie chcemy wyswietlac informacji na temat jakiegos procesu dziecka, gdy się coś z nim stanie
+(np. zostanie zatrzymany)
+
+Resethand flaga, która resetuje handler, gdy tylko chcemy (na ten domyslny w systemie)

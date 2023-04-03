@@ -17,4 +17,4 @@ raport: static
 	./main_exec mask >> raport.txt
 	./main_exec pending >> raport.txt
 clean:
-	rm -rf main *.txt main_fork main_exec child
+	rm -rf main raport.txt main_fork main_exec child

@@ -1,0 +1,26 @@
+--Testing sa_sigaction--
+Siginfo handler!
+Signal number from sig: 2, from siginfo 2
+PID: 4812, PPID: 4811 
+User ID of sending that process: 501 
+Code identifying the cause of the signal : 0
+Setting flag sa_siginfo!
+Siginfo handler!
+Signal number from sig: 2, from siginfo 2
+PID: 4812, PPID: 4811 
+User ID of sending that process: 501 
+Code identifying the cause of the signal : 0
+--Testing sa_nocldstop--
+Process 4811 is sending 17 to 4813
+Nocldstop handler!
+Signal number from sig: 20,PID: 4813, PPID: 4811
+Setting flag sa_nocldstop!
+Process 4811 is sending 17 to 4821
+--Testing sa_resethand--
+Process 4811 is sending 17 to 4824
+Resethand handler!
+Signal number from sig: 20,PID: 4812, PPID: 4811
+Setting flag sa_resethand!
+Process 4811 is sending 17 to 4827
+Resethand handler!
+Signal number from sig: 20,PID: 4812, PPID: 4811
