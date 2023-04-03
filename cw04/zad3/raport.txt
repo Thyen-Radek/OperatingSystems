@@ -1,0 +1,6 @@
+Wnioski:
+
+kill jest funkcja przydatna do wysyłania jakichkolwiek sygnałów, aby je pozniej łatwo odebrać
+nalezy pamietac aby ten sygnal umiescic w sigaction aby moc go odebrać 
+
+natomiast sigqueue nie musi ustalać zadnej maski, odrazu sygnał jest odbierany i handler wywołuje.

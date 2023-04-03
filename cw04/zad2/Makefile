@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall
 $(info ************ Wykonano zadanie 2 ************)
 
 static:

@@ -6,13 +6,11 @@
 #include <ctype.h>
 
 void handler1(int sig) {
-    printf("Sender received SIGUSR1 signal\n");
-    printf("Sender received %d signals caught and sent back from catcher\n", sig);
-
+    printf("Sender received SIGUSR1 signal from catcher\n");
 }
 
 int main(int argc,char *argv[]){
-     if (argc != 3) {
+     if (argc < 3) {
         perror("Wrong number of arguments\n");
         exit(1);
     }
@@ -36,19 +34,23 @@ int main(int argc,char *argv[]){
         perror("Sigaction error\n");
     }
 
-    sigset_t signal_set;
-    sigemptyset(&signal_set);
+    sigset_t sigset;
 
-    if ((value.sival_int = atoi(argv[2])) < 1) {
-        perror("Invalid value \n");
-        exit(1);
-    }
-    // sigqueue();
-    // while(1){
-    //     sigqueue(pid, SIGUSR1, value);
-    // }
+    sigaddset(&act.sa_mask, SIGUSR1);
+
+    sigemptyset(&sigset);
+
+    int index = 2;
     
-    sigqueue(pid, SIGUSR1, value);
-    sigsuspend(&signal_set);
+    while (index < argc) {
+        if ((value.sival_int = atoi(argv[index])) < 1) {
+            perror("Invalid value \n");
+            exit(1);
+        }
+        sigqueue(pid, SIGUSR1, value);
+        sigsuspend(&sigset);
 
+        index += 1;
+    }
+    return 0;
 }

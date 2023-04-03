@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -std=c11
-# $(info ************ Wykonano zadanie 3 ************)
+CFLAGS = -Wall 
+$(info ************ Wykonano zadanie 3 ************)
 
 static:
 	$(CC) $(CFLAGS) sender.c -o sender
