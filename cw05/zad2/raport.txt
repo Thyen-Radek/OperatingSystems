@@ -51,4 +51,3 @@ Real time of function: 0.000000s
 User time of function: 0.000000s
 System time of function: 0.000000s
 Result of function: 3.144337 
-

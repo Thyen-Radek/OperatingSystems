@@ -1,0 +1,78 @@
+Distance: 0.1 number of processes: 100 
+Real time of function: 0.090000s
+User time of function: 0.000000s
+System time of function: 0.010000s
+Result of function: 31.515760 
+
+Distance: 0.1 number of processes: 1000 
+Real time of function: 0.600000s
+User time of function: 0.000000s
+System time of function: 0.090000s
+Result of function: 314.259249 
+
+Distance: 0.001 number of processes: 1000 
+Real time of function: 0.190000s
+User time of function: 0.000000s
+System time of function: 0.050000s
+Result of function: 3.363187 
+
+Distance: 0.001 number of processes: 100 
+Real time of function: 0.090000s
+User time of function: 0.000000s
+System time of function: 0.010000s
+Result of function: 3.142592 
+
+Distance: 0.001 number of processes: 100 
+Real time of function: 0.090000s
+User time of function: 0.000000s
+System time of function: 0.010000s
+Result of function: 3.142592 
+
+Distance: 0.001 number of processes: 100 
+Real time of function: 0.090000s
+User time of function: 0.000000s
+System time of function: 0.010000s
+Result of function: 3.142592 
+
+Distance: 0.0001 number of processes: 100 
+Real time of function: 0.090000s
+User time of function: 0.000000s
+System time of function: 0.010000s
+Result of function: 3.169434 
+
+Distance: 0.00001 number of processes: 100 
+Real time of function: 0.090000s
+User time of function: 0.000000s
+System time of function: 0.010000s
+Result of function: 3.143241 
+
+Distance: 0.00001 number of processes: 1000 
+Real time of function: 0.590000s
+User time of function: 0.000000s
+System time of function: 0.090000s
+Result of function: 3.158083 
+
+Distance: 0.00001 number of processes: 10000 
+Real time of function: 2.850000s
+User time of function: 0.000000s
+System time of function: 0.810000s
+Result of function: 3.326632 
+
+Distance: 0.001 number of processes: 10 
+Real time of function: 0.000000s
+User time of function: 0.000000s
+System time of function: 0.000000s
+Result of function: 3.142592 
+
+Distance: 0.00001 number of processes: 10 
+Real time of function: 0.020000s
+User time of function: 0.000000s
+System time of function: 0.000000s
+Result of function: 3.141765 
+
+Distance: 0.00000001 number of processes: 10 
+Real time of function: 0.420000s
+User time of function: 0.000000s
+System time of function: 0.000000s
+Result of function: 3.141593 
+

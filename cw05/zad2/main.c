@@ -7,6 +7,8 @@
 #include <ctype.h>
 #include <signal.h>
 #include <limits.h>
+#include <sys/wait.h>
+
 
 
 clock_t start,end;
@@ -44,6 +46,8 @@ int main(int argc,char *argv[]){
     }
     printf("Distance: %f \n",distance);
 
+    start = times(&start_time_tms);
+    
     int fd[n][2];
     for (int i = 0;i<n;i++){
         if(pipe(fd[i])<0){
@@ -52,7 +56,7 @@ int main(int argc,char *argv[]){
         }
     }
     double range = (double)1 / (double) n;
-    start = times(&start_time_tms);
+    
     for(int i = 0; i < n;i++){
         double a = range * i;
         double b = range * (i+1);
@@ -71,6 +75,7 @@ int main(int argc,char *argv[]){
             close(fd[i][1]);
         }
     }
+    wait(NULL);
     
     double sum = 0;
     for (int i = 0;i<n;i++){
@@ -92,5 +97,5 @@ int main(int argc,char *argv[]){
 
     fclose(out_file);
     
-    return 0;
+    exit(0);
 }

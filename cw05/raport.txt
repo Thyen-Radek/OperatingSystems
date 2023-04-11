@@ -1,0 +1,28 @@
+Zadanie 1
+
+Zanim uruchomimy program nalezy zainstalować pakiety związane z mailem i sprawdzić czy działa
+Wysyłanie działa poprawnie aczkolwiek, cięzko powiedzieć czy napewno ten mail dojdzie, raczej nie powinien, 
+wszelkie poczty blokuja takie przypadki.
+W przypadku listowania wysłanych maili zawsze posiadamy tylko 1, ten automatyczny, chyba, zeby grzebac w ustawieniach.
+Działa poprawnie 
+
+Zadanie 2
+
+W przypadku korzystania z potoków w zaleznosci ile ich potrzebujemy tyle trzeba ich stworzyc nalezy o tym pamietac.
+Czasami wyniki mogą wychodzić gorsze lub lepsze, jest to uzaleznione od podanych argumentów, czasami jesli 
+ilosc procesow jest zle dobrana do wielkosci prostokata, moga powstac dziwne wyniki. (Niz przy korzystaniu z 1 procesu)
+Jest to oczywiscie uzaleznione od przedzialow i samej dlugosci prostokata. Np. h = 0.1, n = 3, przedzial 1: 0-0.3333334
+,a wiec przy obliczaniu niektore wartosci moga nam umykac.
+
+Zadanie 3 
+
+Podobnie jak powyzej dzialanie jest podobne, aczkolwiek w tym przypadku dodatkowo, procesy potomne jak i rodzic dziala
+w tym samym czasie, wiec wyniki ktore sa zwracane nie gwarantuja poprawnego rozwiazania, gdy przykladowo rodzic 
+zakonczy swoja prace duzo wczesniej.
+
+To rozwiazanie rozni sie tylko tym ze tworzymy sobie strumien i do niego wpisujemy i odczytujemy z niego nasze parametry
+rozwiązania. 
+
+Komentarz do czasów:
+
+Oczywiscie im wiecej procesów tym lepiej ale nie przesadnie, aczkolwiek jest to mocno uzaleznione od procesora na jakim pracujemy.

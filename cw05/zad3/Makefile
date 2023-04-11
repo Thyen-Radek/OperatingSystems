@@ -4,8 +4,8 @@ $(info ************ Wykonano zadanie 3 ************)
 
 static:
 	$(CC) $(CFLAGS) main.c -o main
-run_example:
-	./main root example_title content
-	./main sender
+	$(CC) $(CFLAGS) solve.c -o solve
+run_example: static
+	./main 0.1 10
 clean:
-	rm -rf main *.txt
+	rm -rf main
