@@ -81,8 +81,7 @@ int main(int argc,char *argv[]){
     } 
     sum = sum * distance;
     end = times(&end_time_tms);
-    // printf(sum);
-    // sum = sum * distance;
+
     FILE *out_file;
     out_file = fopen("raport.txt", "a");
     
