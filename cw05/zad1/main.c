@@ -27,25 +27,18 @@ void listing_emails(char *option){
         printf("%s \n", line);
     }
     pclose(file);
-    exit(0);
 }
 void sending_emails(char *adress,char *title,char *content){
     FILE *file;
-    char command[LINE_MAX],line[LINE_MAX];
+    char command[LINE_MAX];
     sprintf(command, "echo %s | mail -s %s %s", content, title, adress);
     if ((file = popen(command, "r")) == NULL) {
         perror("popen error\n");
         exit(1);
     }
-    // printf("Sending email to: %s\nwith title: %s\nand content:\n%s\n", adress, title, content);
-
-    while(fgets(line,LINE_MAX,file) != NULL ){
-        printf("%s \n", line);
-    }
+    printf("Email sent to: %s\nTitle: %s\nContent:\n%s\n", adress, title, content);
     
     pclose(file);
-
-    return;
 }
 int main(int argc,char *argv[]){
     if (argc != 2 && argc != 4){
