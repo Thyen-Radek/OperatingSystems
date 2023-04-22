@@ -15,8 +15,8 @@
 
 #define MAX_MESSAGE_LENGTH LINE_MAX
 #define MAX_CLIENTS 3
-#define MAX_CLIENTS_MESSAGES 10
-#define MAX_SERVER_MESSAGES 10
+#define MAX_CLIENTS_MESSAGES 3
+#define MAX_SERVER_MESSAGES 3
 #define SERVER_QUEUE_NAME "/server"
 
 typedef struct msg_buffer {
@@ -50,7 +50,6 @@ void create_message(msg_buffer message, char *msg) {
     strcpy(msg, new_message);
 
     msg[strlen(msg)] = '\0';
-    // printf("WIELKI MESSG %s\n",msg);
 }
 
 int msg_send(int client_id, msg_buffer message, int message_type) {
@@ -82,7 +81,6 @@ long parse_long(char *message) {
 
 int parse_text(char *target, char *message) {
     char *buffer, *new_message;
-    // printf("Message: %s \n", message);
     if ((new_message = strtok_r(message, "-", &buffer)) == NULL) {
         perror("ERROR! An error occurred while parsing message.\n");
         return -1;

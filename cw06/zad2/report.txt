@@ -9,7 +9,7 @@ Text of the message: NICE
 Date: Sat Apr 22 21:07:24 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:08:24 2023
  
 Message send by sender with 27 id.
@@ -21,7 +21,7 @@ Text of the message: 
 Date: Sat Apr 22 21:08:53 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:08:58 2023
  
 Message send by sender with 0 id.
@@ -33,7 +33,7 @@ Text of the message: /95605
 Date: Sat Apr 22 21:09:28 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:09:34 2023
  
 Message send by sender with 27 id.
@@ -41,7 +41,7 @@ Text of the message: /95780
 Date: Sat Apr 22 21:09:37 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:09:39 2023
  
 Message send by sender with 27 id.
@@ -49,7 +49,7 @@ Text of the message: /95875
 Date: Sat Apr 22 21:09:42 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:09:43 2023
  
 Message send by sender with 27 id.
@@ -57,7 +57,7 @@ Text of the message: /95968
 Date: Sat Apr 22 21:09:45 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:09:47 2023
  
 Message send by sender with 27 id.
@@ -65,7 +65,7 @@ Text of the message: /96041
 Date: Sat Apr 22 21:09:48 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:09:55 2023
  
 Message send by sender with 27 id.
@@ -77,7 +77,7 @@ Text of the message: 
 Date: Sat Apr 22 21:09:58 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:09:59 2023
  
 Message send by sender with 0 id.
@@ -89,7 +89,7 @@ Text of the message: /97762
 Date: Sat Apr 22 21:12:17 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:12:25 2023
  
 Message send by sender with 27 id.
@@ -101,7 +101,7 @@ Text of the message: 
 Date: Sat Apr 22 21:12:27 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:12:36 2023
  
 Message send by sender with 0 id.
@@ -125,7 +125,7 @@ Text of the message: NICE
 Date: Sat Apr 22 21:14:29 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:14:33 2023
  
 Message send by sender with 27 id.
@@ -137,7 +137,7 @@ Text of the message: (null)
 Date: Sat Apr 22 21:14:38 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:14:41 2023
  
 Message send by sender with 27 id.
@@ -149,7 +149,7 @@ Text of the message: NICE
 Date: Sat Apr 22 21:15:58 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:16:01 2023
  
 Message send by sender with 27 id.
@@ -161,7 +161,7 @@ Text of the message: /1631
 Date: Sat Apr 22 21:17:55 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:17:59 2023
  
 Message send by sender with 27 id.
@@ -181,7 +181,7 @@ Text of the message: 
 Date: Sat Apr 22 21:21:30 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:21:31 2023
  
 Message send by sender with 0 id.
@@ -197,7 +197,7 @@ Text of the message: NICE
 Date: Sat Apr 22 21:24:15 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:24:18 2023
  
 Message send by sender with 27 id.
@@ -213,7 +213,7 @@ Text of the message: NICE
 Date: Sat Apr 22 21:26:54 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:27:07 2023
  
 Message send by sender with 27 id.
@@ -229,7 +229,7 @@ Text of the message: /10893
 Date: Sat Apr 22 21:29:22 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:29:28 2023
  
 Message send by sender with 0 id.
@@ -241,7 +241,7 @@ Text of the message: /12654
 Date: Sat Apr 22 21:33:57 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sat Apr 22 21:35:09 2023
  
 Message send by sender with 0 id.
@@ -253,7 +253,7 @@ Text of the message: /16193
 Date: Sat Apr 22 21:39:54 2023
  
 Message send by sender with 0 id.
-Text of the message: ª
+Text of the message: ï¿½
 Date: Sun Apr 23 00:34:05 2023
  
 Message send by sender with 0 id.
@@ -325,7 +325,7 @@ Text of the message: (null)
 Date: Sun Apr 23 00:37:00 2023
  
 Message send by sender with 0 id.
-Text of the message: ó¸ğÊV
+Text of the message: ï¿½ï¿½ï¿½V
 Date: Sun Apr 23 00:37:19 2023
  
 Message send by sender with 0 id.
@@ -341,7 +341,7 @@ Text of the message: FLLL
 Date: Sun Apr 23 00:40:03 2023
  
 Message send by sender with 0 id.
-Text of the message: ó/=V
+Text of the message: ï¿½/=V
 Date: Sun Apr 23 00:40:07 2023
  
 Message send by sender with 0 id.
@@ -365,7 +365,7 @@ Text of the message: (null)
 Date: Sun Apr 23 00:41:45 2023
  
 Message send by sender with 0 id.
-Text of the message: óØÄÉU
+Text of the message: ï¿½ï¿½ï¿½ï¿½U
 Date: Sun Apr 23 00:41:48 2023
  
 Message send by sender with 0 id.
@@ -441,7 +441,7 @@ Text of the message: NECE
 Date: Sun Apr 23 00:50:46 2023
  
 Message send by sender with 0 id.
-Text of the message: ó˜*ÂÆU
+Text of the message: ï¿½*ï¿½ï¿½U
 Date: Sun Apr 23 00:50:55 2023
  
 Message send by sender with 2185456 id.
@@ -479,6 +479,3 @@ Date: Sun Apr 23 00:54:30 2023
 Message send by sender with 2185456 id.
 Text of the message: /vboxuser9444
 Date: Sun Apr 23 00:54:34 2023
- 
-Message send by sender with 0 id.
-Text of the message: (null)

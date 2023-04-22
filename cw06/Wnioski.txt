@@ -1,0 +1,12 @@
+Zadanie 1
+
+Nalezy uwazac i pamietac zeby klient mial utworzona kolejke zeby mogl odbierac wiadomosci
+Wazne jestz zeby obslugiwac odlaczanie klientow podczas zamkniecia serwera
+
+Zadanie 2 
+
+W tym rozwiazanie problematyczne jest obslugiwanie wiadomosci odbieranych i wysylanych
+Moga sie zdarzac minimalne bledy na koncu wiadomosci przysylanych i odsylanych tzw. "smieci"
+Wiec nie na kazdym systemie to bedzie dzialac, testowalem na Ubuntu 22 i nie mialem bledow zwiazanych z tym,
+aczkolwiek z tym moze byc roznie 
+
