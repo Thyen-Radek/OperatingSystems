@@ -1,0 +1,37 @@
+
+Date: Sat Apr 22 15:55:14 2023
+ 
+Message send by sender with -1692251104 id.
+Text of the message: -945160024
+Date: Sat Apr 22 15:55:29 2023
+ 
+Message send by sender with 0 id.
+Text of the message: NICE
+Date: Sat Apr 22 15:55:35 2023
+ 
+Message send by sender with 0 id.
+Text of the message: NICE
+Date: Sat Apr 22 15:55:59 2023
+ 
+Message send by sender with -1391432672 id.
+Text of the message: -508952408
+Date: Sat Apr 22 15:56:13 2023
+ 
+Message send by sender with -1216103392 id.
+Text of the message: -223739736
+Date: Sat Apr 22 15:56:34 2023
+ 
+Message send by sender with 2 id.
+Text of the message: NICE
+Date: Sat Apr 22 15:56:45 2023
+ 
+Message send by sender with 2 id.
+Text of the message: 
+Date: Sat Apr 22 15:56:48 2023
+ 
+Message send by sender with 1 id.
+Text of the message: 
+Date: Sat Apr 22 15:56:52 2023
+ 
+Message send by sender with 0 id.
+Text of the message: 
