@@ -128,7 +128,6 @@ int save_message(msg_buffer *message) {
 }
 void handle_message(char *get_message) {
     msg_buffer *message;
-    printf("Received message: %s\n", get_message);
     message = parse_message(get_message);
 
     if (save_message(message) == -1) {
