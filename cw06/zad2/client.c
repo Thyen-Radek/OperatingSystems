@@ -55,6 +55,7 @@ void stop_action() {
         msg_buffer message;
         message.m_type = STOP;
         message.sender_id = client_id;
+        message.send_time = 0;
         if (child_pid > 0)
             kill(child_pid, SIGKILL);
         if (msg_send(server_queue, message, STOP) == -1) {
@@ -82,6 +83,7 @@ void list_action() {
     msg_buffer message;
     message.m_type = LIST;
     message.sender_id = client_id;
+    message.send_time = 0;
     if (msg_send(server_queue, message, LIST)) {
         perror("ERROR! An error occurred: cannot send a message to all users.\n");
         exit(1);
@@ -107,7 +109,7 @@ void to_one_action(int receiver_id, char *message) {
     new_message.m_type = _2ONE;
     new_message.sender_id = client_id;
     new_message.receiver_id = receiver_id;
-    new_message.send_time = time(NULL);
+    new_message.send_time = 0;
     strcpy(new_message.m_text, message);
     if (msg_send(server_queue, new_message, _2ONE) == -1) {
         perror("ERROR! An error occurred: cannot send a message to all users.\n");
@@ -119,6 +121,8 @@ void to_all_action(char *message) {
     msg_buffer new_message;
     new_message.m_type = _2ALL;
     new_message.sender_id = client_id;
+    new_message.receiver_id = 0;
+    new_message.send_time = 0;
     strcpy(new_message.m_text, message);
     if (msg_send(server_queue, new_message, _2ALL) == -1) {
         perror("ERROR! An error occurred: cannot send a message to all users.\n");
@@ -230,13 +234,14 @@ void init_client(){
     }
     msg_buffer message;
     message.m_type = INIT;
+    message.sender_id = 0;
+    message.receiver_id = 0;
+    message.send_time = 0;
     sprintf(message.m_text, "%s", init_name);
     if (msg_send(server_queue, message, INIT) == -1) {
         perror("ERROR! An error occurred: cannot send a message to the server.\n");
         exit(1);
     }
-    printf("SENDED");
-    printf("Init name %s",init_name);
 
     msg_buffer *new_message;
     if (!(new_message = msg_receive(INIT)))

@@ -48,7 +48,9 @@ void create_message(msg_buffer message, char *msg) {
             "-",
             message.send_time);
     strcpy(msg, new_message);
+
     msg[strlen(msg)] = '\0';
+    printf("WIELKI MESSG %s\n",msg);
 }
 
 int msg_send(int client_id, msg_buffer message, int message_type) {
@@ -80,7 +82,7 @@ long parse_long(char *message) {
 
 int parse_text(char *target, char *message) {
     char *buffer, *new_message;
-    printf("message: %s", message  );
+    printf("Message: %s \n", message);
     if ((new_message = strtok_r(message, "-", &buffer)) == NULL) {
         perror("ERROR! An error occurred while parsing message.\n");
         return -1;

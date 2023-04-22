@@ -8,6 +8,7 @@ int server_queue;
 void exit_handler(){
     msg_buffer message;
     message.m_type = STOP;
+    message.send_time = 0;
     char msg[MAX_MESSAGE_LENGTH];
     create_message(message, msg);
 
@@ -42,6 +43,7 @@ void list_action(msg_buffer *message) {
     }
     msg_buffer new_message;
     new_message.m_type = LIST;
+    new_message.send_time = 0;
     strcpy(new_message.m_text, text);
 
     if (msg_send(connected_clients[message->sender_id], new_message, LIST) == -1) {
@@ -59,6 +61,7 @@ void init_client(msg_buffer *message) {
         if (connected_clients[i] == 0) {
             found_free_id = 1;
             new_id = i;
+            break;
         }
     }
     if (found_free_id == 0) {
@@ -71,7 +74,9 @@ void init_client(msg_buffer *message) {
     }
     msg_buffer new_message;
     new_message.m_type = INIT;
-    new_message.sender_id = new_id;
+    new_message.sender_id = 0;
+    new_message.receiver_id = 0;
+    new_message.send_time = 0;
     sprintf(new_message.m_text, "%d", new_id);
 
     if (msg_send(connected_clients[new_id], new_message, INIT) == -1) {
@@ -90,7 +95,7 @@ void to_one_action(int sender_id, int receiver_id, char *message) {
     new_message.m_type = _2ONE;
     new_message.sender_id = sender_id;
     new_message.receiver_id = receiver_id;
-    new_message.send_time = time(NULL);
+    new_message.send_time = time(0);
     strcpy(new_message.m_text, message);
     if (msg_send(connected_clients[receiver_id], new_message, _2ONE) == -1) {
         perror("ERROR! An error occurred while sending a message to client.\n");
@@ -116,7 +121,6 @@ int save_message(msg_buffer *message) {
 
     time(&raw_time);
    
-
     sender_id = message->sender_id;
     sender_message = message->m_text;
 
@@ -195,7 +199,7 @@ int main(int argc, char*argv[]){
     printf("Server is ready!\n");
     char message[MAX_MESSAGE_LENGTH];
     while (true) {
-        if (mq_receive(server_queue, message, 2048, NULL) == -1) {
+        if (mq_receive(server_queue, message, MAX_MESSAGE_LENGTH, NULL) == -1) {
             perror("ERROR! An error occurred while getting a message from server queue.\n");
             exit(1);
         }
