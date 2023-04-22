@@ -154,9 +154,17 @@ void handle_message(char *get_message) {
             break;
         case STOP:
             printf("Received STOP message from client %d.\n", message->sender_id);
+            if (connected_clients[message->sender_id] == 0){
+                fprintf(stderr, "ERROR! An error occurred: There is no such a client!\n");
+            }
+            if(mq_close(connected_clients[message->sender_id]) == -1){
+                fprintf(stderr, "ERROR! An error occurred: Cannot close queue!\n");
+            }
 
             connected_clients[message->sender_id] = 0;
             printf("Client %d has left the server.\n", message->sender_id);
+
+
 
             break;
         default:
