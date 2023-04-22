@@ -479,3 +479,6 @@ Date: Sun Apr 23 00:54:30 2023
 Message send by sender with 2185456 id.
 Text of the message: /vboxuser9444
 Date: Sun Apr 23 00:54:34 2023
+ 
+Message send by sender with 0 id.
+Text of the message: (null)
