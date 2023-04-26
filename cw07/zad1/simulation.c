@@ -6,6 +6,7 @@ int sem_chairs;
 int sem_hairdressers;
 
 void create_semaphores();
+void unlink_semaphores();
 
 int main(void){
     printf("Simulation started\n");
@@ -50,10 +51,18 @@ int main(void){
     printf("Shared memory released\n");
     fflush(stdout);
     
+    unlink_semaphores();
+    printf("Semaphores unlinked\n");
+    fflush(stdout);
+
     return 0;
 
 }
-
+void unlink_semaphores(){
+    unlink_semaphore(QUEUE_NAME);
+    unlink_semaphore(CHAIRS_NAME);
+    unlink_semaphore(HAIRDRESSERS_NAME);
+}
 void create_semaphores(){
     sem_queue = create_semaphore(QUEUE_NAME, QUEUE_SIZE);
     sem_chairs = create_semaphore(CHAIRS_NAME, CHAIRS);

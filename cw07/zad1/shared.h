@@ -176,5 +176,17 @@ void set_semaphore_value(int semid, int value){
         exit(1);
     }
 }
+void unlink_semaphore(char* filename){
+    int semid = open_semaphore(filename);
+    if( semid == -1) {
+        perror("semget");
+        exit(1);
+    }
+    if(semctl(semid, 0, IPC_RMID) == -1){
+        perror("semctl");
+        exit(1);
+    }
+   
+}
 
 
