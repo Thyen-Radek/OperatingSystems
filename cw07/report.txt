@@ -1,0 +1,6 @@
+Wykonane zostały wszystkie zadania na 100%
+
+Aby uruchomić: 
+
+> make
+> ./simulation

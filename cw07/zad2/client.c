@@ -1,8 +1,8 @@
 #include "shared.h"
 
-int sem_queue;
-int sem_chairs;
-int sem_hairdressers;
+sem_t* sem_queue;
+sem_t* sem_chairs;
+sem_t* sem_hairdressers;
 
 void get_semaphores();
 char haircut();
@@ -38,7 +38,6 @@ int main(void){
 
     return 0;
 }
-
 void get_semaphores(){
     sem_queue = open_semaphore(QUEUE_NAME);
     sem_chairs = open_semaphore(CHAIRS_NAME);

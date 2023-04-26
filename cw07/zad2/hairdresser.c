@@ -1,8 +1,8 @@
 #include "shared.h"
 
-int sem_queue;
-int sem_chairs;
-int sem_hairdressers;
+sem_t *sem_queue;
+sem_t* sem_chairs;
+sem_t* sem_hairdressers;
 int hairdresser_id;
 int cut_time;
 
@@ -81,10 +81,8 @@ int main(int argc, char *argv[]){
         }
     }
     // Others will wake up if hairdresser stuck in queue
-    set_semaphore_value(sem_hairdressers, 1);
-    // Eventually this:
-    // unlock_semaphore(sem_hairdressers);
-    
+    // Maybe that's not the best solution, but it works in this case
+    unlock_semaphore(sem_hairdressers);
     // Unlinking shared memory
     shmdt(shared);
 

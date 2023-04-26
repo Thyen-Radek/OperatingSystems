@@ -20,7 +20,6 @@
 #define QUEUE_NAME "0"
 #define CHAIRS_NAME "1"
 #define HAIRDRESSERS_NAME "2"
-// #define SEM_BUFFER_MUTEX_FNAME "3"
 
 #define HAIRDRESSER 3
 #define CHAIRS 4
@@ -37,7 +36,6 @@ typedef enum haircuts {
     D = 4000,
     E = 5000
 } haircuts; 
-
 
 
 char *shared_memory(const char* filename, int size){
