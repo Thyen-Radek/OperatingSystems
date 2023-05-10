@@ -1,5 +1,6 @@
 CC = gcc
 CFLAGS = -Wall
+$(info ************ Wykonano zadanie 1 ************)
 
 all: life
 	
