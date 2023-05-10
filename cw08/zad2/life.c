@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
 	endwin(); // End curses mode
 	destroy_grid(foreground);
 	destroy_grid(background);
+	destroy_threads();
 
 	return 0;
 }

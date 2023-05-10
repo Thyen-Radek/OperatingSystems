@@ -10,6 +10,7 @@ bool is_alive(int row, int col, char *grid);
 void update_grid(char *src, char *dst);
 void* update_grid_thread(void* args);
 void sig_handler(int signo, siginfo_t *info, void *context);
+void destroy_threads();
 void update_grid_multithreaded(char* src, char* dst, int threads_num);
 
 typedef struct {

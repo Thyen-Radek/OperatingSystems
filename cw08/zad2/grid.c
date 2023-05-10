@@ -8,6 +8,7 @@
 
 const int grid_width = 30;
 const int grid_height = 30;
+static pthread_t*threads = NULL;
 
 char *create_grid()
 {
@@ -121,35 +122,40 @@ void*update_grid_thread(void *args)
 }
 void sig_handler(int signo, siginfo_t *info, void *context){}
 
+void destroy_threads(){
+    free(threads);
+}
+
 void update_grid_multithreaded(char *src, char *dst, int n_threads)
 {
-    pthread_t*threads = NULL;
-
-    int default_threads = grid_height * grid_width;
-
-    n_threads = n_threads < 0 ? default_threads : n_threads;
-    
-    threads = malloc(sizeof(pthread_t) * n_threads);
+    static int default_threads = grid_height * grid_width;
 
     struct sigaction act;
     sigemptyset(&act.sa_mask);
     act.sa_sigaction = sig_handler;
     act.sa_flags = SA_SIGINFO;
     sigaction(SIGUSR1, &act, NULL);
+    
+    if (!threads){
 
-    int block = default_threads / n_threads + (default_threads % n_threads == 0 ? 0 : 1);
+        n_threads = n_threads < 0 ? default_threads : n_threads;
+        
+        threads = malloc(sizeof(pthread_t) * n_threads);
 
-    for (int i = 0; i < default_threads; i+=block)
-    {
-        thread_args_t *args = malloc(sizeof(thread_args_t));
-        args->src = src;
-        args->dst = dst;
-        args->start = i;
-        args->end = i + block > default_threads ? default_threads : i + block;
+        int block = default_threads / n_threads + (default_threads % n_threads == 0 ? 0 : 1);
 
-        pthread_create(threads + i/block, NULL, update_grid_thread, args);
+        for (int i = 0; i < default_threads; i+=block)
+        {
+            // It will free memory once program is terminated
+            thread_args_t *args = malloc(sizeof(thread_args_t));
+            args->src = src;
+            args->dst = dst;
+            args->start = i;
+            args->end = i + block > default_threads ? default_threads : i + block;
+
+            pthread_create(threads + i/block, NULL, update_grid_thread, args);
+        }
     }
-
     for (int i = 0; i < n_threads; i++)
     {
         pthread_kill(threads[i], SIGUSR1);

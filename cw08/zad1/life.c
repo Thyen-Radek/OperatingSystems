@@ -34,6 +34,7 @@ int main()
 	endwin(); // End curses mode
 	destroy_grid(foreground);
 	destroy_grid(background);
+	destroy_threads();
 
 	return 0;
 }

@@ -1,7 +1,7 @@
 pthread_create - Tworzy nowe wątki jako argument przekazuje sie funkcje na której 
 wątek jest utworzony i pracuje, trzeba pamiętać, zeby sie nie zakonczył (while)
 
-pthread_kill - Zabija wątki przy zakonczeniu programu, podaje sie mu odpowiedni sygnał,
+pthread_kill - Zabija wątki, podaje sie mu odpowiedni sygnał,
 mozna dodatkowo ustalic sig_action aby nie wyswietlal nam zbędnych rzeczy
 
 najprostszym rozwiazaniem do przekazywania wartosci do wątków jest utworzona wlasna struktura

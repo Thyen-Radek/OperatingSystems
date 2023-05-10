@@ -8,6 +8,7 @@
 
 const int grid_width = 30;
 const int grid_height = 30;
+static pthread_t*threads = NULL;
 
 char *create_grid()
 {
@@ -121,13 +122,13 @@ void*update_grid_thread(void *args)
 }
 void sig_handler(int signo, siginfo_t *info, void *context){}
 
+void destroy_threads(){
+    free(threads);
+}
+
 void update_grid_multithreaded(char *src, char *dst)
 {
-    pthread_t*threads = NULL;
-
-    int n_threads = grid_width * grid_height;
-    
-    threads = malloc(sizeof(pthread_t) * n_threads);
+    static int n_threads = grid_width * grid_height;
 
     struct sigaction act;
     sigemptyset(&act.sa_mask);
@@ -135,17 +136,22 @@ void update_grid_multithreaded(char *src, char *dst)
     act.sa_flags = SA_SIGINFO;
     sigaction(SIGUSR1, &act, NULL);
 
-    for (int i = 0; i < n_threads; i++)
-    {
-        thread_args_t *args = malloc(sizeof(thread_args_t));
-        args->src = src;
-        args->dst = dst;
-        args->start = i;
-        args->end = i + 1;
+    if (!threads){
 
-        pthread_create(threads + i, NULL, update_grid_thread, args);
+        threads = malloc(sizeof(pthread_t) * n_threads);
+
+        for (int i = 0; i < n_threads; i++)
+        {
+            // It will free memory once program is terminated
+            thread_args_t *args = malloc(sizeof(thread_args_t));
+            args->src = src;
+            args->dst = dst;
+            args->start = i;
+            args->end = i + 1;
+
+            pthread_create(threads + i, NULL, update_grid_thread, args);
+        }
     }
-
     for (int i = 0; i < n_threads; i++)
     {
         pthread_kill(threads[i], SIGUSR1);
