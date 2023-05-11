@@ -9,7 +9,7 @@
 const int grid_width = 30;
 const int grid_height = 30;
 static pthread_t*threads = NULL;
-
+static int default_threads;
 char *create_grid()
 {
     return malloc(sizeof(char) * grid_width * grid_height);
@@ -128,8 +128,6 @@ void destroy_threads(){
 
 void update_grid_multithreaded(char *src, char *dst, int n_threads)
 {
-    static int default_threads = grid_height * grid_width;
-
     struct sigaction act;
     sigemptyset(&act.sa_mask);
     act.sa_sigaction = sig_handler;
@@ -137,6 +135,8 @@ void update_grid_multithreaded(char *src, char *dst, int n_threads)
     sigaction(SIGUSR1, &act, NULL);
     
     if (!threads){
+
+        default_threads = grid_height * grid_width;
 
         n_threads = n_threads < 0 ? default_threads : n_threads;
         
