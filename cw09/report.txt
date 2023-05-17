@@ -1,0 +1,4 @@
+Zadanie 1 zostało wykonane w 100 %
+
+Do synchronizowania ilości w danym momencie reniferów/elfów
+uzyłem barier - duzo wygodniejsze podejscie 
