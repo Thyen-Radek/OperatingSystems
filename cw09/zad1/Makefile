@@ -6,4 +6,4 @@ all:
 	$(CC) $(CFLAGS) main.c -o main -lpthread
 	
 clean:
-	rm -f life
+	rm -f main
