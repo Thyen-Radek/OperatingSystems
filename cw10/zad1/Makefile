@@ -3,13 +3,7 @@ CFLAGS=-Wall
 $(info ************ Wykonano zadanie 1 ************)
 
 all:
-	make client
-	make server
-
-client: client.c
 	$(CC) $(CFLAGS) client.c -o client -pthread
-
-server: server.c
 	$(CC) $(CFLAGS) server.c -o server -pthread
 
 clean:

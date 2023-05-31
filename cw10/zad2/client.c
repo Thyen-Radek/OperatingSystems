@@ -46,9 +46,9 @@ int main(int argc, char** argv) {
   if (argc == 5 && strcmp(argv[2], "web") == 0) sock = connect_web(argv[3], atoi(argv[4]));
   else if (argc == 4 && strcmp(argv[2], "unix") == 0) sock = connect_unix(argv[3], nickname);
   else {
-    printf("Try [nick] [web|unix] [ip port|path]");
-    printf("Example: ./client kamil web 127.0.0.1 8080");
-    printf("Example2: ./client kamil unix socket");
+    printf("Try [nick] [web|unix] [ip port|path]\n");
+    printf("Example: ./client kamil web 127.0.0.1 8080\n");
+    printf("Example2: ./client kamil unix socket\n");
     exit(0);
   }
 
